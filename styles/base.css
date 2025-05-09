@@ -18,6 +18,7 @@ nav {
     background-color: var(--background-color);
     padding: 10px;
     display: flex;
+    align-content: center;
 }
 
 .nav li{
