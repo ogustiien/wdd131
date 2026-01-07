@@ -46,7 +46,7 @@ main {
     padding-left:1rem ;
     background-color: var(--accent-2-color);
     align-self: center;
-    display:flex;
+    display:grid;
 }
 
 
