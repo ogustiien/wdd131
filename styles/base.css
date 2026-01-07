@@ -1,0 +1,47 @@
+:root {
+    --primary-color: #BC6C25;
+    --secondary-color: #BFC69F;
+    --accent-1-color: #DDA15E;
+    --accent-2-color: #938693;
+    --background-color: aqua;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 30px;
+    margin: 30px;
+    background-color: var(--background-color);
+    padding: 10px;
+    display: flex;
+    align-content: center;
+}
+
+.nav li {
+    align-items: center;
+    justify-items: center;
+}
+
+nav a {
+    color: black;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+    text-decoration:dotted;
+}
+
+main {
+    max-width: 1200px;
+    padding-right: 20px;
+    padding-left: 20px;
+    align-self: center;
+}
