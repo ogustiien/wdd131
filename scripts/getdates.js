@@ -5,6 +5,6 @@ const today = new Date();
 full.innerHTML = `Today is <span class="lastmodified"> ${new Intl.DateTimeFormat(
     "en-US",
     {
-        dateStyle: "full"
+        dateStyle: "#full"
     }
 ).format(today)}</span>`;
