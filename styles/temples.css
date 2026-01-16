@@ -1,0 +1,50 @@
+/*fonts
+.noto-sans-mono-<uniquifier> {
+    font-family: "Noto Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+        
+.roboto-<uniquifier> {
+
+    font-optical-sizing: auto;
+
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+*/
+
+nav {
+    background-color: #36454f;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+nav a {
+    display: grid;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: #00ffdd;
+    color: #000;
+}
+
+main{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    max-width: 640px;
+    margin: 1rem auto;
+}
+
