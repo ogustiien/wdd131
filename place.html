@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweden - A Beautiful Place</title>
+    <meta name="description" content="Temples page for the week 2 task include temples of all sizes i guess">
+    <meta name="author" content="Augustine Ogubie">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+    <header class="page-header">
+        <h1>Sweden</h1>
+    </header>
+
+    <main class="hero-container">
+           <picture class="large-image-placeholder">
+            <source srcset="images/sweden2.jpg" media="(max-width: 700px)">
+            <img src="images/sweden.jpg" alt="Beautiful view of Sweden">
+        </picture>
+    
+    
+        <section class="card data-card">
+            <h2>A Wonder</h2>
+            <p>
+                Sweden is a Scandinavian wonder defined by its breathtaking contrast between
+                vibrant urban life and untouched wilderness. From the cobblestone streets of
+                Stockholm’s Gamla Stan to the ethereal glow of the Northern Lights in Swedish
+                Lapland, the nation offers a masterclass in balance. It is a land where the
+                "Allemansrätten" (freedom to roam) allows anyone to explore its vast forests
+                and thousands of crystal-clear lakes. Sweden’s commitment to sustainability
+                and design is legendary, seamlessly blending modern innovation with deep-rooted
+                traditions like 'Fika'. Whether you are chasing the midnight sun or exploring
+                vibrant coastal archipelagos, Sweden remains a serene, captivating escape for
+                the soul.
+            </p>
+        </section>
+    
+        <section class="card weather-card">
+            <div class="weather-header">
+                <h2>Weather</h2>
+                <div class="weather-icon-box"></div>
+            </div>
+            <ul>
+                <li><strong>Temp:</strong> 10°C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> 15 km/h</li>
+                <li><strong>Wind Chill:</strong> 8°C</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>&copy;<span id="currentyear"></span> | Augustine Ogubie | Sweden</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

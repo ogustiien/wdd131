@@ -1,0 +1,172 @@
+:root {
+  --blue: #004B87;
+  --gold: #FFCD00;
+  --navy: #002846;
+  --white: #F9F9F9;
+  --slate: #53565A;
+  --border-thick: 3px solid var(--navy);
+}
+
+.hero-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    border: var(--border-thick);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.large-image-placeholder img {
+    width: 100%;
+    display: block;
+}
+
+.card {
+    background-color: rgba(249, 249, 249, 0.9); /* var(--white) with transparency */
+    padding: 20px;
+    border: 1px solid var(--navy);
+    border-radius: 10px;
+    position: absolute;
+    color: var(--slate);
+}
+
+/* Position "A Wonder" card on the left per wireframe */
+.data-card {
+    top: 20px;
+    left: 20px;
+    width: 320px; /* Slightly wider for the paragraph */
+    height: calc(100% - 40px);
+    overflow-y: auto; /* Adds scroll if text is too long for the image height */
+}
+
+/* Position Weather card on the bottom-right per wireframe */
+.weather-card {
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+}
+
+.card h2 {
+    color: var(--blue);
+    border-bottom: 2px solid var(--gold);
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Header & Footer styling */
+.page-header, .page-footer {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+    border: var(--border-thick);
+}
+
+
+=============================================================================================================
+
+/*:root {
+    --blue: #004B87;
+    --gold: #FFCD00;
+    --navy: #002846;
+    --white: #F9F9F9;
+    --slate: #53565A;
+    --border-thick: 3px solid var(--navy);
+}
+
+/* General Layout */
+/* body {
+    margin: 0;
+    padding: 0;   
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+    color: var(--slate);
+} */
+/* 
+header,
+footer {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    border: var(--border-thick);
+}
+
+/* Hero Section */
+.hero-container {
+    position: relative;
+    /* This allows absolute positioning of cards */
+    max-width: 1000px;
+    margin: 2rem auto;
+    border: var(--border-thick);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.large-image-placeholder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Card Styling */
+.card {
+    background-color: rgba(249, 249, 249, 0.9);
+    /* var(--white) with transparency */
+    border: 1px solid var(--navy);
+    padding: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    /* Positions cards over the image */
+}
+
+.card h2 {
+    color: var(--navy);
+    border-bottom: 2px solid var(--gold);
+    margin-bottom: 0.5rem;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card li {
+    margin: 5px 0;
+}
+
+/* Specific Wireframe Placement */
+.data-card {
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    /* Matches the tall 'text here' box on the left */
+    height: calc(100% - 40px);
+}
+
+.weather-card {
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+    /* Matches the small box on the bottom right */
+}
+
+.weather-icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: var(--gold);
+    border-radius: 50%;
+}
+
+/* Responsive adjustment */
+@media (max-width: 700px) {
+    .card {
+        position: static;
+        width: 100%;
+        margin: 10px 0;
+    }
+} */

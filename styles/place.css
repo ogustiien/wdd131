@@ -1,0 +1,102 @@
+:root {
+    --blue: #004B87;
+    --gold: #FFCD00;
+    --navy: #002846;
+    --white: #F9F9F9;
+    --slate: #53565A;
+    --border-thick: 3px solid var(--navy);
+}
+
+.hero-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    border: var(--border-thick);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.large-image-placeholder img {
+    width: 100%;
+    display: block;
+}
+
+.card {
+    background-color: rgba(249, 249, 249, 0.9);
+    /* var(--white) with transparency */
+    padding: 20px;
+    border: 1px solid var(--navy);
+    border-radius: 10px;
+    position: absolute;
+    color: var(--slate);
+}
+
+/* Position "A Wonder" card on the left per wireframe */
+.data-card {
+    top: 20px;
+    left: 20px;
+    width: 320px;
+    height: auto;
+}
+
+/* Position Weather card on the bottom-right per wireframe */
+.weather-card {
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+}
+
+.card h2 {
+    color: var(--blue);
+    border-bottom: 2px solid var(--gold);
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Header & Footer styling */
+.page-header,
+.page-footer {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+    border: var(--border-thick);
+}
+
+/* =============================================================================================================== */
+@media (max-width: 700px) {
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        /* Optional: simplifies look on small screens */
+    }
+
+    .large-image-placeholder img {
+        height: auto;
+    }
+
+    /* Reset absolute positioning to stack cards naturally */
+    .data-card,
+    .weather-card {
+        position: static;
+        width: auto;
+        margin: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+        background-color: var(--white);
+        /* Removes transparency for better readability */
+    }
+
+    .page-header,
+    .page-footer {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+}
