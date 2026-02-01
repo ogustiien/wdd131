@@ -26,8 +26,8 @@
 
     <main class="hero-container">
            <picture class="large-image-placeholder">
-            <source srcset="images/sweden2.jpg" media="(max-width: 700px)">
-            <img src="images/sweden.jpg" alt="Beautiful view of Sweden">
+            <source srcset="images/sweden2.webp" media="(max-width: 700px)">
+            <img src="images/sweden.webp" alt="Beautiful view of Sweden">
         </picture>
     
     
@@ -47,18 +47,29 @@
             </p>
         </section>
     
-        <section class="card weather-card">
-            <div class="weather-header">
-                <h2>Weather</h2>
-                <div class="weather-icon-box"></div>
+    <section class="card weather-card">
+        <div class="weather-header">
+            <h2>Weather</h2>
+            <div class="weather-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17.5 19x.01"></path>
+                    <path d="M12 2v2"></path>
+                    <path d="m4.93 4.93 1.41 1.41"></path>
+                    <path d="M20 12h2"></path>
+                    <path d="m19.07 4.93-1.41 1.41"></path>
+                    <path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"></path>
+                    <path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z"></path>
+                </svg>
             </div>
-            <ul>
-                <li><strong>Temp:</strong> 10°C</li>
-                <li><strong>Conditions:</strong> Partly Cloudy</li>
-                <li><strong>Wind:</strong> 15 km/h</li>
-                <li><strong>Wind Chill:</strong> 8°C</li>
-            </ul>
-        </section>
+        </div>
+        <ul>
+            <li><strong>Temp:</strong> 10°C</li>
+            <li><strong>Conditions:</strong> Partly Cloudy</li>
+            <li><strong>Wind:</strong> 15 km/h</li>
+            <li><strong>Wind Chill:</strong> <span id="chill-value">8°C</span></li>
+        </ul>
+    </section>
     </main>
 
     <footer class="page-footer">

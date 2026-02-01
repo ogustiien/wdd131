@@ -46,6 +46,29 @@
     width: 250px;
 }
 
+.weather-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Pushes icon to the right */
+    border-bottom: 2px solid var(--gold);
+    /* Matches your h2 styling  */
+    margin-bottom: 15px;
+}
+
+.weather-header h2 {
+    border-bottom: none;
+    /* Remove duplicate border from original h2 rule */
+    margin-bottom: 0;
+}
+
+.weather-icon-box svg {
+    color: var(--blue);
+    /* Uses your brand blue  */
+    width: 40px;
+    height: 40px;
+}
+
 .card h2 {
     color: var(--blue);
     border-bottom: 2px solid var(--gold);
