@@ -23,7 +23,6 @@
 
 .card {
     background-color: rgba(249, 249, 249, 0.9);
-    /* var(--white) with transparency */
     padding: 20px;
     border: 1px solid var(--navy);
     border-radius: 10px;
@@ -31,7 +30,6 @@
     color: var(--slate);
 }
 
-/* Position "A Wonder" card on the left per wireframe */
 .data-card {
     top: 20px;
     left: 20px;
@@ -39,7 +37,6 @@
     height: auto;
 }
 
-/* Position Weather card on the bottom-right per wireframe */
 .weather-card {
     bottom: 20px;
     right: 20px;
@@ -50,29 +47,34 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* Pushes icon to the right */
     border-bottom: 2px solid var(--gold);
-    /* Matches your h2 styling  */
     margin-bottom: 15px;
 }
 
 .weather-header h2 {
     border-bottom: none;
-    /* Remove duplicate border from original h2 rule */
     margin-bottom: 0;
 }
 
 .weather-icon-box svg {
     color: var(--blue);
-    /* Uses your brand blue  */
     width: 40px;
     height: 40px;
 }
 
+.card h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: var(--gold);
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
 .card h2 {
+    border-bottom: none !important;
     color: var(--blue);
-    border-bottom: 2px solid var(--gold);
-    margin-bottom: 15px;
 }
 
 .card p {
@@ -80,7 +82,6 @@
     line-height: 1.5;
 }
 
-/* Header & Footer styling */
 .page-header,
 .page-footer {
     background-color: var(--blue);
@@ -96,14 +97,12 @@
         display: flex;
         flex-direction: column;
         border: none;
-        /* Optional: simplifies look on small screens */
     }
 
     .large-image-placeholder img {
         height: auto;
     }
 
-    /* Reset absolute positioning to stack cards naturally */
     .data-card,
     .weather-card {
         position: static;
@@ -114,7 +113,6 @@
 
     .card {
         background-color: var(--white);
-        /* Removes transparency for better readability */
     }
 
     .page-header,
