@@ -24,6 +24,9 @@ nav {
     justify-content: flex-end;
 }
 
+img {
+    width: auto;
+}
 
 nav a {
     display: grid;
