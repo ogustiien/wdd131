@@ -70,6 +70,11 @@ td {
     text-align: left;
 }
 
+td {
+    color: #3498db;
+    font-weight: bold;
+}
+
 th {
     background-color: var(--primary-color);
     color: white;
