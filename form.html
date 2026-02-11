@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <meta name="description" content="A form im supposed to reaate aabout something im not too sure of">
+    <meta name="author" content="Augustine Ogubie">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>some form</title>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <form method="get" action="review.html" id="review-form">
+        <div class="form-item">
+            <label for="product-name">Product Name</label>
+            <select id="product-name" name="product-name" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+        </div>
+    
+        <div class="form-item">
+            <label>Overall Rating</label>
+            <div class="stars">
+                <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+            </div>
+            <blockquote>
+                <strong>Note:</strong> Each radio button shares the same <code>name</code> so the browser treats them as a
+                single group, ensuring the user can only select one rating at a time.
+            </blockquote>
+        </div>
+    
+        <div class="form-item">
+            <label for="install-date">Date of Installation</label>
+            <input type="date" id="install-date" name="install-date" required>
+        </div>
+    
+        <div class="form-item">
+            <label>Useful Features (Check all that apply)</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="feature-performance" name="features" value="performance">
+                    Performance</label>
+                <label><input type="checkbox" id="feature-design" name="features" value="design"> Design</label>
+                <label><input type="checkbox" id="feature-durability" name="features" value="durability"> Durability</label>
+            </div>
+        </div>
+    
+        <div class="form-item">
+            <label for="written-review">Written Review (Optional)</label>
+            <textarea id="written-review" name="written-review" rows="4"></textarea>
+        </div>
+    
+        <div class="form-item">
+            <label for="user-name">Your Name (Optional)</label>
+            <input type="text" id="user-name" name="user-name">
+        </div>
+    
+        <input type="submit" value="Post Review">
+    </form>
+    <footer class="page-footer">
+        <p>&copy;<span id="currentyear"></span>  Augustine Ogubie | Review form </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

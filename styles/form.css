@@ -1,0 +1,148 @@
+#review-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #0004ff;
+}
+
+.form-item {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #2F2F2F;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+select,
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0004ff;
+    box-shadow: 0 0 5px rgba(188, 0, 45, 0.2);
+}
+
+.rating-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.rating-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-transform: none;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #0004ff;
+}
+
+blockquote {
+    margin: 10px 0 0 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 4px solid #ddd;
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+}
+
+input[type="submit"] {
+    background-color: #0004ff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+    background-color: #010247;
+
+}
+
+
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars>label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+    /* remove blinking cursor*/
+}
+
+.stars>label:hover {
+    color: #0004ff;
+}
+
+.stars>label::before {
+    content: "\2606";
+}
+
+.stars input:checked~label::before {
+    content: "\2605";
+}
+
+@media (max-width: 480px) {
+    #review-form {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .rating-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
