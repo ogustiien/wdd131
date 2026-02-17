@@ -1,0 +1,176 @@
+:root {
+    --feint-red: #fffafa;
+    /* Near-white with a hint of red for background */
+    --deep-red: #990000;
+    /* Dark crimson (Passes 8.9:1 on white) */
+    --sky-blue: #004d73;
+    /* Deep Navy/Teal (Passes 9.0:1 on white) */
+    --dark-text: #121212;
+    /* High-contrast charcoal (Passes 18.7:1 on white) */
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--white);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+/* Ensure headings meet AAA standards */
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--deep-red);
+    margin-top: 1.5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--feint-red);
+    border-bottom: 5px solid var(--sky-blue);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-text);
+    font-weight: 700;
+    /* Increased weight for better legibility */
+    font-family: 'Oswald', sans-serif;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--deep-red);
+    border-bottom: 3px solid var(--sky-blue);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Content Section Elevation */
+.content-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 2px solid #eeeeee;
+    /* Thicker border for clear separation */
+}
+
+.text-side h2 {
+    color: var(--deep-red);
+    font-size: 2.2rem;
+    margin-top: 0;
+    border-bottom: 4px solid var(--sky-blue);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Directory Cards */
+.card {
+    border: 2px solid #e0e0e0;
+    border-top: 6px solid var(--sky-blue);
+    border-radius: 10px;
+    padding: 25px;
+    background-color: var(--white);
+}
+
+.difficulty-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    /* More blocky for a professional feel */
+    font-size: 0.9rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: var(--dark-text);
+    /* Switched to dark for maximum contrast */
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+/* Forms */
+form {
+    background-color: var(--feint-red);
+    padding: 40px;
+    border-radius: 8px;
+    border: 2px solid var(--sky-blue);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: var(--dark-text);
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid var(--dark-text);
+    /* High contrast border */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: var(--deep-red);
+    color: var(--white);
+    padding: 18px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+footer {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--dark-text);
+    color: var(--white);
+    margin-top: 60px;
+}
+
+footer a {
+    color: #ffffff;
+    /* Pure white on dark background for AAA */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+
+    .content-section,
+    .reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+}
